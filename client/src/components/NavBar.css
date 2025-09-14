@@ -1,0 +1,71 @@
+/* NavBar.css */
+
+/* Base styles */
+.navbar {
+  background-color: #111827; /* dark navy/black */
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Logo */
+.logo {
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+/* Nav links */
+.nav-links li {
+  list-style: none;
+}
+
+.links {
+  transition: color 0.3s ease;
+}
+
+/* Mobile menu (hidden by default) */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #1f2937; /* gray-800 */
+  padding: 1rem 0;
+}
+
+/* Hamburger */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* 🔹 Responsive breakpoints */
+@media (max-width: 768px) {
+  .nav1 {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 1rem;
+  }
+
+  .nav-content {
+    display: none !important; /* hide desktop links */
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+}

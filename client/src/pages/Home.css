@@ -1,0 +1,38 @@
+.h-main{
+    height: 100vh;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+  .h-section-1 {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .h-sub-section-1 h1 {
+    font-size: 2rem; 
+  }
+
+  .h-sub-section-1 p {
+    font-size: 1rem;
+  }
+
+  .h-section-2 {
+    justify-content: center;
+  }
+
+  /* ✅ Make parent flex to center image */
+  .h-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .h-image-container img {
+    width: 50%;   /* slightly bigger for mobile */
+    height: auto;
+  }
+}

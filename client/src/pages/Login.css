@@ -1,0 +1,59 @@
+.l-main{
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* ===== Mobile-first adjustments ===== */
+@media (max-width: 1024px) {
+  .l-login-container {
+    padding: 2rem; /* reduce padding */
+    width: 100%;
+    max-width: 400px; /* keep it centered */
+  }
+
+  .l-login-input {
+    width: 100%; /* full width on mobile */
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .l-login-button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .l-head {
+    font-size: 2rem;
+  }
+
+  .l-login-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Extra small screens <640px */
+@media (max-width: 640px) {
+  .l-main {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .l-login-container {
+    padding: 1.5rem;
+  }
+
+  .l-head {
+    font-size: 1.5rem;
+  }
+
+  .l-login-input {
+    font-size: 0.9rem;
+  }
+
+  .l-login-button {
+    font-size: 0.9rem;
+  }
+}
